@@ -80,7 +80,6 @@ This is an example of Strong Suppression Mode
 ![Figure_12c](assets/Figure_12c.png)
 
 # Example of diversity of solutions under strong field noise (using Strong Suppression Mode)
-This is an example of Strong Suppression Mode
 ![Figure_13](assets/Figure_13.png)
 
 
