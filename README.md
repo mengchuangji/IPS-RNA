@@ -105,10 +105,15 @@ We provide two trained models and log files in files `<exp>/logs/marmousi_v2_nm`
 
 These checkpoint files are provided as-is from the authors of [NCSNv2_seismic](https://github.com/mengchuangji/ncsnv2_seismic).
 
+To **speed up** sampling, we also provide a trained score network implemented with Unet in files `<exp>/logs/MmsSegyopenf_unet` (ckpt_id=220000, 800000); see [pretrained model](https://pan.baidu.com/s/149cJjFPd5PanTVnxIc9pxw?pwd=1111), 提取码: 1111.
+; you can run  main_mcj_sample_noGT_field_when_ScoreNetwork_is_unet.py, the config file is `<config>/marmousi_unet.yml`
+
+
 **Note**:
 ----------------------------------------------------------------------------------------
 You can also retrain a SGMs (change hyperparameters or datasets , see [NCSNv2_seismic](https://github.com/mengchuangji/ncsnv2_seismic)) to get your own generative model for seismic data or other types of natural image data, remote sensing data, medical imaging data.
 
+**Some of the code is for drawing some pictures, if you don't need it, you can comment it out. For example, plot stochastic_variations_R, plot stochastic_variations_LS, plot stochastic_variations_x_t in <runner>/ncsn_runner\_\*.py`**
 
 ----------------------------------------------------------------------------------------
 **Note**: This project is being integrated into commercial software and is intended for scientific research purposes only, not commercial purposes.
